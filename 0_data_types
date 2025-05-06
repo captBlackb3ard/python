@@ -1,0 +1,130 @@
+# Python Variables Types
+
+## Dynamic Typing
+- Python variables are dynamically typed - the same variable can hold different types of values during execution
+```
+a = 123
+a = "System message"
+```
+
+## Multiple Assignments
+### Assigning the same value
+- Python allows assigning the same value to nultiple variables in a single line.
+```
+a = b = c 1001
+```
+### Assigning Different Values
+- Different values can be assigned to multiple variables simultaenously
+```
+x, y, z, = 10, 3.142, "Titan"
+```
+
+## Numeric Types
+- Integers: `int`
+ - A number (positive or negative) that does not include a decimal point
+`x = 1` 
+`y = 100000`
+`z = -12`
+
+- Float: `float`
+ - A number (positive or negative) with a decimal point.
+`x = 0.1`
+`y = - 12.0`
+`z = 12e4`
+
+- Complex: `complex`
+ - Numbers are written with a "j" as the imaginary part.
+`x = 1j`
+`y = -5j`
+`z = 2+5j`
+
+### Type Conversion
+- Convert one type to another with int(), float(), and complex()
+`x = 1`
+`y = 1.2`
+`z = 1j`
+
+- Convert from int to float: `a = float(x)`
+- Convert from float to int: `b = int(y)`
+- Convert from int to complex: `c = complex(x)`
+
+
+## Text Type
+- Strings - data consisting of an ordered sequence of characters; letters, numbers, symbols, and spaces.
+- Characters must be placed within quotation marks - single or double.
+`a = "Hello"`
+`b = "Hello World"`
+`c = "20%"`
+`d = "5.0"`
+`e = "**/**/**"`
+
+- Multiline Strings: use three quotes.
+`a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""`
+
+- In Python, strings are arrays: characters can be accessed via indexes or through looping.
+`a = "Hello"`
+`print(a[1])` - will print 'e'
+
+## Sequence Types
+
+### List - `list`
+- A data structure that consists of a collection of data in sequential form placed within square brackets `[]` separated by commas.
+- The data can be changed unlike a tuple.
+- It can be of any data type: strings, integers, Booleans, or even lists.
+`[12, 36, 54, 1, 7]`
+`["jsmith", "jdoe", "jabe"]`
+`[True, False, True, True]`
+`[15, "approved", True, 45.5, False]`
+
+
+### Tuple - `tuple`
+- A data structure that consists of a collection that cannot be changed placed within parentheses `()` separated by commas.
+- It can contains various data types.
+- Data within tuples cannot be changed unlike lists, and they are more memory efficient than lists and thus useful for large data quantities.
+`("wjaffrey", "arutley", "dkot")`
+`(46, 2, 13, 2, 8, 0, 0)`
+`(True, False, True, True)`
+`("jsmith", 13, True)`
+
+
+## Mapping Type
+
+### Dictionaries - 'dict'
+- A data structure that consists one or more key-value pairs.
+- A colon `:` is placed between the key and value, commas separate key-value pairs, and curly brackets `{}` contain the values.
+- Data stored in dictonaries can be changed, added or removed, but *duplicates* are NOT allowed.
+- Dictionaries can be ordered (order will not change) or unordered 
+`{ 1: "East", 2: "West", 3: "North", 4: "South" }`
+`thisdict = {
+  "brand": "Volkswagen",
+  "model": "Golf",
+  "year": 2003
+}`
+
+## Set Type
+
+### Set: `set`
+- A data structure that consists of a collection of unique values.
+- The collection is unordered, unchangeable, and unindexed.
+- Data elements are always placed within curly braces `{}`, separated by a comma, and can be of any data type.
+`{"apple", "banana", "cantelope"}`
+
+
+## Boolean Type
+
+### Possible values `bool`: `True` or `False`
+- Evaluate an expression in Python and get one of two answers `True` or `False`
+
+
+## Type Casting Variables
+- Type casting is the process of converting the value of one data type into another. Python has several built-in functions to aid type casting - `int()`, `float()`, and 'str()' to name a few.
+```
+a = "11" #Holds a string
+b = int(a) #Cast string to integer
+c = 3  #Holds an integer
+d = float(c) #cast integer to float
+e = str(c) #Cast integer to string
+```
