@@ -59,7 +59,7 @@ print(f"Use the 'remove()' to delete a specific list item by value, e.g., frthli
 frthlist.pop(1)
 print(f"The 'pop()' method removes a specified index, e.g., frthlist.pop(1) results in {frthlist}") #The last item is removed if no index is specified
 del scndlist[4]
-print(f"Use the 'del' keyword to delete a specified index value, e.g, scndlist.del(4) results {scndlist}")
+print(f"Use the 'del' keyword to delete a specified index value, e.g, del scndlist[4] results {scndlist}")
 print(f"Running 'del scndlist' will delete the list completely.")
 frstlist.clear()
 print(f"Use the 'clear()' method to empty a list, e.g., frstlist.clear() results in an empty list {frstlist}")

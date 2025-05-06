@@ -5,10 +5,6 @@ Python has 4 built-in data types - Lists, Tuples, Sets, and Dictionary
 """
 
 """
-Python has 4 built-in data types - Lists, Tuples, Sets, and Dictionary
-"""
-
-"""
 =====================================================================
 Tuples
 =====================================================================
@@ -34,8 +30,8 @@ print(f"tuple0 has only one item {tuple0}")
 #Tuples can contain multiple data types
 tuple3 = ("abc", 34, True, 40, "male")
 print(f"\nTuples can contain a different data types: {tuple3}")
-#Use the tupple() constructor to create a tuple
-tuple4 = tuple(("alligator", "bear", "cheetah", "donkey"))
+#Use the tuple() constructor to create a tuple
+tuple4 = tuple(("alligator", "bear", "cheetah", "deer"))
 print(f"Use the 'tuple()' constuctor to create a tuple - {tuple4}")
 
 
