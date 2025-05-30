@@ -94,6 +94,7 @@ dict_animal = {
     "animal2" : dict_wolf,
     "animal3" : dict_whale
 }
+print("\nNested Dictionaries\n---------------------------------------------------------")
 print(f"\nDictionary dict_animal is a nested dictionary with {len(dict_animal)} items, but each item has {len(dict_animal['animal1'])} sub-items")
 print(f"Dictionary dict_animal has the following key-value pairs {dict_animal.items()}")
 for x, obj in dict_animal.items():
